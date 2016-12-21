@@ -13,7 +13,7 @@ public class ManglistpCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
 
-        if (cmd.getName().equalsIgnoreCase("manulistp")) {
+        if (cmd.getName().equalsIgnoreCase("manglistp")) {
 
             if (args.length < 1) {
                 sender.sendMessage(Main.wrong_args + cmd.getName() + " player");

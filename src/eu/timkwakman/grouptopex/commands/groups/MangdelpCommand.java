@@ -13,7 +13,7 @@ public class MangdelpCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
 
-        if (cmd.getName().equalsIgnoreCase("manudelp")) {
+        if (cmd.getName().equalsIgnoreCase("mangdelp")) {
 
             if (args.length < 2) {
                 sender.sendMessage(Main.wrong_args + cmd.getName() + " player permission");

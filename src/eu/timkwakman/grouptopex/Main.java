@@ -17,7 +17,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
 
         // Register commands.
-        getCommand("manguaddp").setExecutor(new MangaddpCommand());
+        getCommand("mangaddp").setExecutor(new MangaddpCommand());
         getCommand("mangdelp").setExecutor(new MangdelpCommand());
         getCommand("manglistp").setExecutor(new ManglistpCommand());
 
