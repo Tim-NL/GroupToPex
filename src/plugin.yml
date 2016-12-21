@@ -1,0 +1,26 @@
+name: GroupToPex
+main: eu.timkwakman.grouptopex.Main
+version: 0.1
+commands:
+  mangaddp:
+    description: manual add a permission to a group
+  mangdelp:
+    description: manual remove a permission from a group
+  manglistp:
+    description: list the group permissions
+  manuadd:
+    description: add a player to an group
+  manuaddp:
+    description: manual add a permission to a player
+  manuaddsub:
+    description: add an player to a sub group
+  manudel:
+    description: remove a player
+  manudelsub:
+    description: remove an player from a sub group
+  manulistp:
+    description: list the players permissions
+  manload:
+    description: reload the permissions file
+  mansave:
+    description: Nothing for now
