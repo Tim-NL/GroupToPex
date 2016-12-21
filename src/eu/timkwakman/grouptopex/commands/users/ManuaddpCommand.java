@@ -5,23 +5,21 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 public class ManuaddpCommand implements CommandExecutor {
 
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-        Player p = (Player)sender;
 
         if (cmd.getName().equalsIgnoreCase("manuaddp")) {
 
             if (args.length < 2) {
-                p.sendMessage(Main.wrong_args + cmd.getName() + " player permission");
+                sender.sendMessage(Main.wrong_args + cmd.getName() + " player permission");
                 return false;
             }
 
-            Bukkit.dispatchCommand(p, "pex user " + args[0] + " add " + args[1]);
+            Bukkit.dispatchCommand(sender, "pex user " + args[0] + " add " + args[1]);
         }
 
         return false;

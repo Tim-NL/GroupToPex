@@ -20,6 +20,8 @@ commands:
     description: remove an player from a sub group
   manulistp:
     description: list the players permissions
+  manguaddp:
+    description: add an permission to a player
   manload:
     description: reload the permissions file
   mansave:

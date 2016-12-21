@@ -12,16 +12,15 @@ public class ManudelCommand implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-        Player p = (Player)sender;
 
         if (cmd.getName().equalsIgnoreCase("manudel")) {
 
             if (args.length < 1) {
-                p.sendMessage(Main.wrong_args + cmd.getName() + " player");
+                sender.sendMessage(Main.wrong_args + cmd.getName() + " player");
                 return false;
             }
 
-            Bukkit.dispatchCommand(p, "pex user " + args[0] + " delete");
+            Bukkit.dispatchCommand(sender, "pex user " + args[0] + " delete");
         }
 
         return false;

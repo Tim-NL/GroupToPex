@@ -1,4 +1,4 @@
-package eu.timkwakman.grouptopex.commands.utility;
+package eu.timkwakman.grouptopex.commands.utils;
 
 import eu.timkwakman.grouptopex.Main;
 import org.bukkit.Bukkit;
@@ -12,11 +12,10 @@ public class MansaveCommand implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-        Player p = (Player)sender;
 
         if (cmd.getName().equalsIgnoreCase("mansave")) {
 
-            p.sendMessage(Main.not_implemented);
+            sender.sendMessage(Main.not_implemented);
         }
         return false;
     }

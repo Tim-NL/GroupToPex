@@ -1,25 +1,23 @@
 package eu.timkwakman.grouptopex;
 
 import eu.timkwakman.grouptopex.commands.groups.*;
-import eu.timkwakman.grouptopex.commands.utility.*;
 import eu.timkwakman.grouptopex.commands.users.*;
+import eu.timkwakman.grouptopex.commands.utils.*;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin {
 
+public class Main extends JavaPlugin {
 
     public static String prefix_red = ChatColor.GRAY + "[" + ChatColor.RED + "Perms" + ChatColor.GRAY + "] ";
 
     public static String not_implemented = prefix_red + "This command is not yet implemented";
     public static String wrong_args = prefix_red + "Correct use: /";
 
-    public void onEnable()
-    {
-        System.out.println("[GroupManagerCMD] Plugin is ready! :)");
+    public void onEnable() {
 
         // Register commands.
-        getCommand("manguaddp").setExecutor(new MangdelpCommand());
+        getCommand("manguaddp").setExecutor(new MangaddpCommand());
         getCommand("mangdelp").setExecutor(new MangdelpCommand());
         getCommand("manglistp").setExecutor(new ManglistpCommand());
 
