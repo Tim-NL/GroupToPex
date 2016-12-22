@@ -9,8 +9,7 @@ import org.bukkit.command.CommandSender;
 public class ManuaddpCommand implements CommandExecutor {
 
 
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
-    {
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("manuaddp")) {
 
@@ -21,7 +20,6 @@ public class ManuaddpCommand implements CommandExecutor {
 
             Bukkit.dispatchCommand(sender, "pex user " + args[0] + " add " + args[1]);
         }
-
         return false;
     }
 

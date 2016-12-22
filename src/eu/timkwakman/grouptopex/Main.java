@@ -2,7 +2,7 @@ package eu.timkwakman.grouptopex;
 
 import eu.timkwakman.grouptopex.commands.groups.*;
 import eu.timkwakman.grouptopex.commands.users.*;
-import eu.timkwakman.grouptopex.commands.utils.*;
+import eu.timkwakman.grouptopex.commands.others.*;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 

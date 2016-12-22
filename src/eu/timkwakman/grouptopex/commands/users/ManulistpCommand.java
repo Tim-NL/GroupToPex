@@ -10,8 +10,7 @@ import org.bukkit.entity.Player;
 public class ManulistpCommand implements CommandExecutor {
 
 
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
-    {
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("manulistp")) {
 

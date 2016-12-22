@@ -10,8 +10,7 @@ import org.bukkit.entity.Player;
 public class ManudelsubCommand implements CommandExecutor {
 
 
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
-    {
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("manudelsub")) {
 
